@@ -1,0 +1,27 @@
+---
+layout: post
+author: Richard Chong
+---
+
+<p>To play this virtual instrument, use the number row of your keyboard. The "1" key represents the lowest pitch (defaults to middle c) and the "+" key represents the highest pitch. Each key is separated from its left and right neighbors by a semitone. You can shift the register by an octave using your up and down arrow keys. Also feel free to play around with the oscillation type and gain level below.</p>
+
+<div>
+    <label for="oscillation_type">Select an oscillation type:</label>
+    <select name="oscillation_type" id="oscillation_type">
+        <option value="sine">sine</option>
+        <option value="square">square</option>
+        <option value="triangle">triangle</option>
+        <option value="sawtooth">sawtooth</option>
+    </select>
+</div>
+<div>
+    <label for="gain">Select a gain level:</label>
+    0<input type="range" id="gain" name="gain" min="0" max="1" value="0.1" step="0.01">1
+</div>
+<br>
+<canvas id="oscilloscope" width="640" height="100"></canvas>
+<br>
+<canvas id="spectroscope" width="640" height="100"></canvas>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/typing-sounds.js"></script>
