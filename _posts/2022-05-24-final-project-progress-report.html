@@ -1,0 +1,32 @@
+---
+layout: post
+author: Richard Chong
+---
+
+<p>We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component.</p>
+<p><a href="https://github.com/JosephWong123/CS190Final" target="_blank">Source code link</a></p>
+
+<div>
+    <h3>Upload Image</h3>
+    <p>
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+    </p>
+    <canvas id="output"></canvas>
+    <div id="c1">
+        <p>Clustered Color 1</p>
+    </div>
+    <div id="c2">
+        <p>Clustered Color 2</p>
+    </div>
+    <div id="c3">
+        <p>Clustered Color 3</p>
+    </div>
+    <div id="c4">
+        <p>Clustered Color 4</p>
+    </div>
+    <div id="c5">
+        <p>Clustered Color 5</p>
+    </div>
+</div>
+
+<script type="module" src="{{ base.url | prepend: site.url }}/assets/js/image-music.js"></script>
