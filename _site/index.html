@@ -5,19 +5,21 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=3a4ea439ca91751b042c0a775f8803db5d7adc4a">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=154b8db7f64fbfaacbc97b9fa22af9c4363bfb23">
     <link rel="stylesheet" href="/assets/css/styles.css">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Blog | Richard Chong’s Blog</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Blog" />
 <meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Richard Chong’s Blog" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Blog","name":"Richard Chong’s Blog","url":"/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"Blog","name":"Richard Chong’s Blog","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
@@ -55,6 +57,14 @@
         <h1>Latest Posts</h1>
 
 <ul>
+    
+        <li>
+            <h2><a href="/2022/05/24/final-project-progress-report.html">Final Project Progress Report</a></h2>
+            <p>We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component.</p>
+<p><a href="https://github.com/JosephWong123/CS190Final" target="_blank">Source code link</a></p>
+
+
+        </li>
     
         <li>
             <h2><a href="/2022/05/16/mari-kimura.html">Mari Kimura</a></h2>

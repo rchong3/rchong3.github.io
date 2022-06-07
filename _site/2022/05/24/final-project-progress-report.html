@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=154b8db7f64fbfaacbc97b9fa22af9c4363bfb23">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Final Project Progress Report | Richard Chong’s Blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Final Project Progress Report" />
+<meta name="author" content="Richard Chong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component. Source code link" />
+<meta property="og:description" content="We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component. Source code link" />
+<link rel="canonical" href="http://localhost:4000/2022/05/24/final-project-progress-report.html" />
+<meta property="og:url" content="http://localhost:4000/2022/05/24/final-project-progress-report.html" />
+<meta property="og:site_name" content="Richard Chong’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-24T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Final Project Progress Report" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Richard Chong"},"dateModified":"2022-05-24T00:00:00-07:00","datePublished":"2022-05-24T00:00:00-07:00","description":"We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component. Source code link","headline":"Final Project Progress Report","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/05/24/final-project-progress-report.html"},"url":"http://localhost:4000/2022/05/24/final-project-progress-report.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+            <a id="forkme_banner" href="https://github.com/rchong3/rchong3.github.io">View on GitHub</a>
+          
+
+          <h1 id="project_title">Richard Chong's Blog</h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Final Project Progress Report</h1>
+<p>24 May 2022 - Richard Chong</p>
+
+<p>We have implemented image partitioning and convert the average RGB values from these partitions into HSL values. Our intention is to create a more complex algorithm for generating music, but we are still experimenting with a variety of small ideas that were troublesome to embed into the interface. In order to have something to demo, we are currently iterating through the partitions from left to right and top to bottom and playing notes defined by the properties of each box. The hue is used to determine the pitch chosen from a C major scale, the saturation is used to determine the loudness of the note, and the luminosity controls the articulation (attack speed). While we spent a brief amount of time investigating image segmentation, we found that while neural networks could provide benefit in a semantic form, it is more relevant at this stage for us to focus on more abstract image interpretation. Therefore, we have implemented k-means clustering as a means of extracting the most prominent colors from an image. It currently isn’t being used in our demo audio, but we are considering how it could impact the tonality of the piece. We plan to focus our efforts from now on on image contour analysis and completing the algorithmic composition component.</p>
+<p><a href="https://github.com/JosephWong123/CS190Final" target="_blank">Source code link</a></p>
+
+<div>
+    <h3>Upload Image</h3>
+    <p>
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+    </p>
+    <canvas id="output"></canvas>
+    <div id="c1">
+        <p>Clustered Color 1</p>
+    </div>
+    <div id="c2">
+        <p>Clustered Color 2</p>
+    </div>
+    <div id="c3">
+        <p>Clustered Color 3</p>
+    </div>
+    <div id="c4">
+        <p>Clustered Color 4</p>
+    </div>
+    <div id="c5">
+        <p>Clustered Color 5</p>
+    </div>
+</div>
+
+<script type="module" src="http://localhost:4000/assets/js/image-music.js"></script>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">Richard Chong's Blog maintained by <a href="https://github.com/rchong3">rchong3</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
